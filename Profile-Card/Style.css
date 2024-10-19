@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Poppins",sans-serif;
+}
+body{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(69, 68, 68);
+}
+
+.Image{
+    height: 150px;
+    width: 150px;
+    border-radius:50%;
+    background-color: rgb(59, 58, 57);
+    padding: 3px;
+}
+.Image .profile-img{
+    height:100%;
+    width: 100%;
+    border-radius:50%;
+    object-fit:bottom;
+    border:5px solid rgb(59, 58, 57);
+    position: relative;
+}
+.profile-card::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: rgb(59, 58, 57);
+}
+
+.profile-card{
+    display:flex;
+    max-width:370px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background:rgb(244, 243, 243);
+    border-radius:24px;
+    padding:25px;
+    box-shadow:0 5px 10px rgba(255, 255, 255, 0.3);
+    position:relative;
+}
+.profile-card .text-data{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    color: black;
+}
+.text-data .name{
+    font-size:23px;
+    font-weight:500;
+}
+.text-data .job{
+    font-size:15px;
+    font-weight:400;
+}
+.profile-card .media-buttons{
+    display:flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size: 18px;
+    height:34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    text-decoration: none;
+}
+.profile-card .buttons{
+    display:flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons .button{
+    background-color: rgb(37, 37, 151);
+    color:white;
+    border:none;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    margin:0 10px;
+    padding: 8px 24px;
+    cursor: grab;
+    transition: all 0.3s ease;
+}
+.buttons .button:hover{
+    background-color:rgb(111, 62, 201);
+}
+.buttons .button:active{
+    box-shadow: 5px 5px 10px gray;
+}
+
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color:#000;
+    padding: 0 20px;
+    border:none;
+}
+.data .i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.data:last-child{
+    border-right:none;
+}
